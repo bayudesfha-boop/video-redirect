@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Redirect</title>
+    <style>
+        body {
+            background: #111;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        iframe {
+            width: 90%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <iframe id="ytplayer" src="https://www.youtube.com/embed/sWLP13TW7Ck?autoplay=1&mute=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <script>
+        // Redirect after 10 seconds
+        setTimeout(function() {
+            window.location.href = "https://drive.google.com/drive/folders/1uRyCKF9BNkMLAE8Jk6AuFlrJ1UuHhmrs?usp=sharing";
+        }, 10000);
+    </script>
+
+</body>
+</html>
